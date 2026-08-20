@@ -1,5 +1,7 @@
 # Feed Amazon Bedrock Knowledge Bases with live web data using Bright Data
 
+[![Promo](https://github.com/luminati-io/LinkedIn-Scraper/blob/main/Proxies%20and%20scrapers%20GitHub%20bonus%20banner.png)](https://brightdata.com/products/serp-api/google-search/hotels)
+
 A batch pipeline that turns public web pages into a persistent, searchable Amazon Bedrock
 knowledge base. Bright Data scrapes and cleans the pages, S3 is the handoff, and Bedrock
 chunks, embeds, indexes, and answers queries with citations.
