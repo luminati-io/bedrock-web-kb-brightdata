@@ -1,0 +1,38 @@
+[
+ {
+  "question": "What format does the Web Unlocker API return?",
+  "expect": [
+   "https://docs.brightdata.com/scraping-automation/web-unlocker/introduction"
+  ]
+ },
+ {
+  "question": "How do I create my first Web Unlocker zone and send a request?",
+  "expect": [
+   "https://docs.brightdata.com/scraping-automation/web-unlocker/quickstart"
+  ]
+ },
+ {
+  "question": "How do I get the page back as markdown instead of HTML?",
+  "expect": [
+   "https://docs.brightdata.com/scraping-automation/web-unlocker/features"
+  ]
+ },
+ {
+  "question": "How do I target a specific country for my request?",
+  "expect": [
+   "https://docs.brightdata.com/scraping-automation/web-unlocker/configuration"
+  ]
+ },
+ {
+  "question": "Which search engines does the SERP API support?",
+  "expect": [
+   "https://docs.brightdata.com/scraping-automation/serp-api/introduction"
+  ]
+ },
+ {
+  "question": "How do I crawl all the pages of a domain in one call?",
+  "expect": [
+   "https://docs.brightdata.com/api-reference/rest-api/scraper/crawl-api"
+  ]
+ }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "question": "What does the Pro plan cost per month?",
+    "expect": ["https://example.com/pricing"]
+  },
+  {
+    "question": "How do I rotate an API key?",
+    "expect": ["https://example.com/docs/keys"]
+  },
+  {
+    "question": "Which regions are supported?",
+    "expect": ["https://example.com/docs/regions", "https://example.com/pricing"]
+  }
+]
