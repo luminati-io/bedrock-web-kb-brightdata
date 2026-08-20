@@ -1,0 +1,42 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "InvokeEmbeddingModel",
+      "Effect": "Allow",
+      "Action": "bedrock:InvokeModel",
+      "Resource": "arn:aws:bedrock:us-east-1::foundation-model/amazon.titan-embed-text-v2:0"
+    },
+    {
+      "Sid": "ReadSourceBucket",
+      "Effect": "Allow",
+      "Action": ["s3:GetObject", "s3:ListBucket"],
+      "Resource": [
+        "arn:aws:s3:::web-kb-corpus-111122223333",
+        "arn:aws:s3:::web-kb-corpus-111122223333/*"
+      ],
+      "Condition": {
+        "StringEquals": { "aws:ResourceAccount": "111122223333" }
+      }
+    },
+    {
+      "Sid": "S3VectorsStore",
+      "Effect": "Allow",
+      "Action": [
+        "s3vectors:GetIndex",
+        "s3vectors:PutVectors",
+        "s3vectors:GetVectors",
+        "s3vectors:QueryVectors",
+        "s3vectors:DeleteVectors",
+        "s3vectors:ListVectors"
+      ],
+      "Resource": "arn:aws:s3vectors:us-east-1:111122223333:bucket/web-kb-vectors/index/web-kb-index"
+    },
+    {
+      "Sid": "OpenSearchServerlessStoreAlternative",
+      "Effect": "Allow",
+      "Action": "aoss:APIAccessAll",
+      "Resource": "arn:aws:aoss:us-east-1:111122223333:collection/abcdef2048"
+    }
+  ]
+}
