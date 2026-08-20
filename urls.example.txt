@@ -1,0 +1,6 @@
+# One public URL per line. Blank lines and # comments are ignored.
+# Replace these with the pages you want in your knowledge base.
+# Confirm your access policy for each source before running at scale.
+https://example.com/pricing
+https://example.com/docs/getting-started
+https://example.com/blog/whats-new

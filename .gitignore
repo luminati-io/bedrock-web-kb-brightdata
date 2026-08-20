@@ -1,0 +1,19 @@
+.env
+*.pyc
+__pycache__/
+.venv/
+venv/
+.DS_Store
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+out/
+snapshots/
+
+# Terraform / OpenTofu
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.tfstate.lock.info
+*.tfvars
+!*.tfvars.example

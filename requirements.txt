@@ -1,0 +1,7 @@
+# Pinned loosely; the pipeline uses stable, long-lived APIs on each side.
+boto3>=1.35.0
+requests>=2.31.0
+python-dotenv>=1.0.0
+
+# Only needed to run the offline test suite (python -m pytest tests/ -q).
+pytest>=8.0.0
